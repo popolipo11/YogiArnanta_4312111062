@@ -1,0 +1,186 @@
+class Praktikum3 extends StatelessWidget {
+  const Praktikum3({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("StudiGallery"),
+      ),
+      body: Container(
+        padding: EdgeInsets.all(10),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Column(
+              children: [
+                Icon(Icons.access_alarm),
+                SizedBox(
+                  height: 10,
+                ),
+                Text("alarm")
+              ],
+            ),
+            Column(
+              children: [
+                Icon(Icons.phone),
+                SizedBox(
+                  height: 10,
+                ),
+                Text("phone")
+              ],
+            ),
+            Column(
+              children: [
+                Icon(Icons.book),
+                SizedBox(
+                  height: 10,
+                ),
+                Text("book")
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class Praktikumm3 extends StatelessWidget {
+  const Praktikumm3({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("StudiGallery"),
+      ),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          MaterialButton(
+            color: Colors.amber,
+            child: Text("raised"),
+            onPressed: () {},
+          ),
+          MaterialButton(
+            color: Colors.amber,
+            child: Text("material"),
+            onPressed: () {},
+          ),
+          MaterialButton(
+            color: Colors.amber,
+            child: Text("raised"),
+            onPressed: () {},
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class pratikummm3 extends StatelessWidget {
+  const pratikummm3({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("STUDIOGALERY"),
+      ),
+      body: Padding(
+        padding: EdgeInsets.all(8.0),
+        child: Form(
+          child: Column(
+            children: [
+              TextFormField(
+                decoration: InputDecoration(hintText: "username"),
+              ),
+              TextFormField(
+                obscureText: true,
+                decoration: InputDecoration(hintText: "password"),
+              ),
+              ElevatedButton(
+                child: Text("Login"),
+                onPressed: () {},
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class kelas extends StatelessWidget {
+  const kelas({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text("StudioGallery")),
+      body: Container(
+        color: Colors.amberAccent,
+        child: MaterialButton(
+          child: Text("studiogaller"),
+          textColor: Colors.black,
+          onPressed: () {
+            showDialog(
+              context: context,
+              builder: (BuildContext context) {
+                return GiffyDialog.image(
+                  Image.network(
+                    "https://raw.githubusercontent.com/Shashank02051997/FancyGifDialog-Android/master/GIF's/gif14.gif",
+                    height: 200,
+                    fit: BoxFit.cover,
+                  ),
+                  title: Text(
+                    'Image Animation',
+                    textAlign: TextAlign.center,
+                  ),
+                  content: Text(
+                    'This is a image animation dialog box. This library helps you easily create fancy giffy dialog.',
+                    textAlign: TextAlign.center,
+                  ),
+                  actions: [
+                    TextButton(
+                      onPressed: () => Navigator.pop(context, 'CANCEL'),
+                      child: const Text('CANCEL'),
+                    ),
+                    TextButton(
+                      onPressed: () => Navigator.pop(context, 'OK'),
+                      child: const Text('OK'),
+                    ),
+                  ],
+                );
+              },
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
+
+class Hm extends StatelessWidget {
+  const Hm({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Studio Gallery"),
+      ),
+      body: Container(
+        padding: EdgeInsets.all(32.0),
+        margin: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 0),
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20.0), color: Colors.amber),
+        child: Text(
+          "haii",
+          style: TextStyle(color: Colors.blue, fontSize: 20),
+        ),
+      ),
+    );
+  }
+}
